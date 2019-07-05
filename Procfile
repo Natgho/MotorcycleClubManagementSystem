@@ -1,1 +1,1 @@
-web: gunicorn motorcycle_club_management_system.wsgi --log-file -
+web: gunicorn gv250.wsgi --log-file -
