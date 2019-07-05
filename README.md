@@ -2,15 +2,7 @@
 
 A motorcycle club management system. 
 
-## Installation
-
-**Docker:**
-
-```
-docker-compose up -d --build
-```
-
-**Local:**
+## Installation on Local
 
 Install requirements
 
@@ -29,4 +21,14 @@ Run project and navigate to
 
 ```
 make run
+```
+
+## Deployment on Docker
+
+Rename `.env.example` to `.env` and set your environment variables.
+
+**Note**: This file used in **production mode** only.
+
+```
+docker-compose up -d --build
 ```
