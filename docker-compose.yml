@@ -1,0 +1,20 @@
+version: '3'
+
+volumes:
+  postgres_data: {}
+
+services:
+  database:
+    image: postgres:alpine
+    env_file:
+      - .env
+
+  webapp:
+    build: .
+    command: /bin/sh /app/start.sh
+    depends_on:
+      - database
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
