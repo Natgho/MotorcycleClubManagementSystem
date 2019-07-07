@@ -5,4 +5,5 @@ from . import views
 app_name = 'gv250'
 urlpatterns = [
     path('', views.index, name='index'),
+    path('contact/', views.contact, name='contact'),
 ]
