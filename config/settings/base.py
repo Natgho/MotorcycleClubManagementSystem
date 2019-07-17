@@ -98,3 +98,10 @@ LOGGING = {
     },
 }
 SITE_HEADER = "Motorcycle Club Management System"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'data/')  # 'data' is my media folder
+MEDIA_URL = '/media/'
+
+# LOGIN_REDIRECT_URL = 'home'
+# LOGOUT_REDIRECT_URL = 'home'
+
+AUTH_USER_MODEL = 'gv250.Member'
